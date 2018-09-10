@@ -5,6 +5,8 @@
  */
 package DynamicProgramming;
 
+import java.util.Scanner;
+
 /**
  *
  * @author M E G A S T A R
@@ -15,6 +17,8 @@ public class HitungFibonacci {
         String identitas = "Muhammad Khoirul Anam / XRPL3 / 25";
         
         tampilJudul(identitas);
+        
+        int n = tampilInput();
     }
     
     private static void tampilJudul(String identitas)
@@ -23,6 +27,15 @@ public class HitungFibonacci {
         
         System.out.println("\nHitung Fibonacci");
         System.out.println("1, 2, 3, 5, 8, 13, 21, ... dst.\n");
+    }
+    
+    private static int tampilInput() {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Bilangan ke- ");
+        int n = scanner.nextInt();
+        
+        return n;
     }
        
 }
