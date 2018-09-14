@@ -42,3 +42,7 @@ public class Tugas02 {
         System.out.println(Berat[i] + " Sebanyak " + n + " dengan harga Rp." + total);
         jumlah = jumlah + total;
     }
+        System.out.println("\nTotal Bayaran Rp " + jumlah);
+}
+}
+        
