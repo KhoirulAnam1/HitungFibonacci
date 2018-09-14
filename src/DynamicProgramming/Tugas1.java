@@ -22,3 +22,18 @@ public class Tugas1 {
         System.out.print("Masukkan nilai Rupiah: ");
         jumlah = baca.nextInt();
         
+        for(int i = 0; i < 5; i++)
+        {
+            temp = jumlah;
+            if(jumlah>=data[i])
+            {
+                x = jumlah/data[i];
+                hasil[i] = x;
+                jumlah = temp%data[i];
+            }
+            
+            else
+            {
+                hasil[i]=0;
+            }
+        }
